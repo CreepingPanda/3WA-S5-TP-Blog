@@ -1,10 +1,10 @@
 <?php
 $login = "";
 $password = "";
-if (isset($_POST['login'], $_POST['password1']))
+if (isset($_POST['login'], $_POST['password']))
 {
 	$login = mysqli_real_escape_string($db, $_POST['login']);
-	$password = $_POST['password1'];
+	$password = $_POST['password'];
 	$query = "SELECT * FROM user WHERE login='".$login."'";
 	$resultat = mysqli_query($db, $query);
 	if ($resultat)
@@ -12,7 +12,7 @@ if (isset($_POST['login'], $_POST['password1']))
 		$user = mysqli_fetch_assoc($resultat);
 		if ($user)
 		{
-			if (password_verify($password, $user['password1']))
+			if (password_verify($password, $user['password']))
 			{
 				$_SESSION['id'] = $user['id'];
 				$_SESSION['admin'] = (boolean)$user['admin'];
