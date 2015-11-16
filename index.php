@@ -1,9 +1,9 @@
 <?php
-	//session_start();
+	session_start();
 
-	//$database = mysqli_connect(...)
-	//if ( $database == false )
-	//	{ die(mysqli_connect_error()); }
+	$database = mysqli_connect('192.168.1.26', 'shadowblog', 'shadowblog', 'shadowblog')
+	if ( $database == false )
+		{ die(mysqli_connect_error()); }
 
 	$ways = array();
 	$traitements = array();
