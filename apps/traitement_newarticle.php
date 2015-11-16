@@ -12,11 +12,12 @@
 				$insert = "INSERT INTO articles (title, content, id_author) VALUES ('$title', '$content', '$id_author')";
 				mysqli_query($database, $insert);
 				header('Location:index.php');
+				exit;
 			}else {
-				$errors = ['L\'article doit contenir entre 140 et 8191 caractères.'];
+				$errors[] = 'L\'article doit contenir entre 140 et 8191 caractères.';
 			}
 		}else {
-			$errors = ['Le titre doit contenir entre 6 et 127 caractères.'];
+			$errors[] = 'Le titre doit contenir entre 6 et 127 caractères.';
 		}
 	}
 
