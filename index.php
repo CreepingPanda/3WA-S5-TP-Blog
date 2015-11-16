@@ -5,7 +5,7 @@
 	if ( $database == false )
 		{ die(mysqli_connect_error()); }
 
-	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'newmp' 'newarticle', 'profil', 'register', 'userlist');
+	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'newmp', 'newarticle', 'profil', 'register', 'userlist');
 	$traitements = array('newarticle', 'login', 'mp', 'logout', 'newcomment', 'newmp', 'register');
 
 	$traitementsAdmin = array();
@@ -24,7 +24,6 @@
 			$page = $_GET['page'];
 		}
 	}
-	// le php c'est cool
 
 	require('apps/skel.php');
 ?>
