@@ -1,3 +1,5 @@
-<h2>Liste articles</h2>
+<h2>Liste des articles</h2>
 
-<?php echo '- Titre : '.$artlist['title'].'<br />- Contenu : '.$artlist['content']; ?>
+<h3><a href="?page=artlist&id=<?=$artlist['id']?>"><?=$artlist['title']?></a></h3>
+<p><?=$artlist['content']?></p>
+<hr>
