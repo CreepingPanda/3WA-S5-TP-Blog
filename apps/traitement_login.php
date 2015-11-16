@@ -3,10 +3,10 @@ $login = "";
 $password = "";
 if (isset($_POST['login'], $_POST['password']))
 {
-	$login = mysqli_real_escape_string($db, $_POST['login']);
+	$login = mysqli_real_escape_string($database, $_POST['login']);
 	$password = $_POST['password'];
-	$query = "SELECT * FROM user WHERE login='".$login."'";
-	$resultat = mysqli_query($db, $query);
+	$query = "SELECT * FROM users WHERE login='".$login."'";
+	$resultat = mysqli_query($database, $query);
 	if ($resultat)
 	{
 		$user = mysqli_fetch_assoc($resultat);

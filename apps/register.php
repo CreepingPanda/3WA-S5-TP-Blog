@@ -1,7 +1,5 @@
 <?php
 $login = "";
-$nom ="";
-$prenom="";
 $email="";
 $password = "";
 $password2 = "";

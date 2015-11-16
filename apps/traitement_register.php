@@ -1,15 +1,11 @@
 <?php
 $login = "";
-$nom ="";
-$prenom="";
-$email="";
+$email= "";
 $password = "";
 $password2 = "";
-if (isset($_POST['login'], $_POST['password'], $_POST['password2'], $_POST['email'], $_POST['nom'], $_POST['prenom']))
+if (isset($_POST['login'], $_POST['password'], $_POST['password2'], $_POST['email']))
 {
 	$login = $_POST['login'];
-	$nom = $_POST['nom'];
-	$prenom = $_POST['prenom'];
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 	$password2 = $_POST['password2'];
@@ -27,19 +23,11 @@ if (isset($_POST['login'], $_POST['password'], $_POST['password2'], $_POST['emai
 	{
 		$errors[] = "Login too short";
 	}
-	if (strlen($nom) < 2)
-	{
-		$errors[] = "Nom too short";
-	}
-	if (strlen($prenom) < 2)
-	{
-		$errors[] = "Prénom too short";
-	}
 	if (count($errors) == 0)
 	{
 		$hash = password_hash($_POST['password'], PASSWORD_BCRYPT, array("cost"=>10));
-		$query = "INSERT INTO user (login, nom, prenom, email, password) VALUES('$login', '$nom', '$prenom', '$email', '$hash')";
-		$resultat = mysqli_query($db, $query);
+		$query = "INSERT INTO users (login, email, password) VALUES('$login', '$email', '$hash')";
+		$resultat = mysqli_query($database, $query);
 
 		header('Location: index.php?page=login');
 		exit;
