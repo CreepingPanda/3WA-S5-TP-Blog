@@ -17,9 +17,11 @@
 		if ( in_array($_GET['page'], $traitements) ) {
 			require('apps/traitement_'.$_GET['page'].'.php');
 		}
-		// else if ( isset($_SESSION['id']) && $_SESSION['rights'] == 2 ) {
-		// 	require('apps/traitement_'.$_GET['page'].'.php');
-		// }
+		else if ( isset($_SESSION['id']) && $_SESSION['rights'] == 2 ) {
+			if ( in_array($_GET['page'], $traitementsAdmin) ) {
+				require('apps/traitement_'.$_GET['page'].'.php');
+			}
+		}
 		if ( in_array($_GET['page'], $ways) ) {
 			$page = $_GET['page'];
 		}
