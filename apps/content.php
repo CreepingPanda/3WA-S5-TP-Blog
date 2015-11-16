@@ -1,4 +1,4 @@
 <?php
 if ( isset($page)) {
-	require ('views/'.$page.'.php');}
+	require ('apps/'.$page.'.php');}
 ?>
