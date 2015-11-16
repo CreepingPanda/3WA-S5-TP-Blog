@@ -11,6 +11,7 @@
 	$traitementsAdmin = array();
 
 	$page = 'home';
+	$errors = array();
 
 	if ( isset($_GET['page']) ) {
 		if ( in_array($_GET['page'], $traitements) ) {
