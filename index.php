@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	$database = mysqli_connect('192.168.1.26', 'shadowblog', 'shadowblog', 'shadowblog')
+	$database = mysqli_connect('192.168.1.26', 'shadowblog', 'shadowblog', 'shadowblog');
 	if ( $database == false )
 		{ die(mysqli_connect_error()); }
 
@@ -23,6 +23,7 @@
 			$page = $_GET['page'];
 		}
 	}
+	// le php c'est cool
 
 	require('apps/skel.php');
 ?>
