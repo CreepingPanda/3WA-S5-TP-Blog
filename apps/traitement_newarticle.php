@@ -3,7 +3,7 @@
 	$title = "";
 	$content = "";
 
-	if ( isset($_POST['title'], $_POST['content']) && $_SESSION['id'] ) {
+	if ( isset($_POST['title'], $_POST['content'], $_SESSION['id']) ) {
 		$id_author = $_SESSION['id'];
 		$title = $_POST['title'];
 		$content = $_POST['content'];
