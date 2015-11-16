@@ -1,0 +1,30 @@
+.navbar {
+  border-radius: 0;
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+  color:#fff;
+}
+.navbar .navbar-right {
+  padding-left: 100px;
+}
+.dropdown-menu {
+  padding: 10px 10px;
+}
+.dropdown-menu .form-signin h2 {
+  font-size: 2rem;
+}
+.dropdown-menu .form-signin input {
+  border-radius: 0;
+}
+.dropdown-menu .form-signin button {
+  border-radius: 0;
+}
+.register a {
+  font-weight: bold;
+  color: #FF7500;
+}
+.login {
+  text-transform: uppercase;
+  color: #5BC0DE;
+}

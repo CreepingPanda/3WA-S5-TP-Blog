@@ -15,7 +15,7 @@ if (isset($_POST['login'], $_POST['password']))
 			if (password_verify($password, $user['password']))
 			{
 				$_SESSION['id'] = $user['id'];
-				$_SESSION['admin'] = (boolean)$user['admin'];
+				$_SESSION['rights'] = $user['rights'];
 				$_SESSION['login'] = $user['login'];
 				header('Location: index.php');
 				exit;
