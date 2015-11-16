@@ -24,6 +24,7 @@
 			$page = $_GET['page'];
 		}
 	}
+	// le php c'est cool
 
 	require('apps/skel.php');
 ?>
