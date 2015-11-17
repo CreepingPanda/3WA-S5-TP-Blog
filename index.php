@@ -7,13 +7,8 @@
 		die(mysqli_connect_error());
 	}
 
-<<<<<<< HEAD
-	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'newmp', 'newarticle', 'profil', 'register', 'userlist', 'edit_profil');
-	$traitements = array('newarticle', 'login', 'mp', 'logout', 'newcomment', 'newmp', 'register', 'profil', 'edit_profil');
-=======
-	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'newmp', 'newarticle', 'profil', 'register', 'userlist', 'archives');
-	$traitements = array('newarticle', 'login', 'mp', 'logout', 'addComment', 'newmp', 'register', 'note');
->>>>>>> ad78870912ed80425f939a41185ebb6572648bdd
+	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'newmp', 'newarticle', 'profil', 'register', 'userlist', 'archives', 'edit_profil');
+	$traitements = array('newarticle', 'login', 'mp', 'logout', 'addComment', 'newmp', 'register', 'note', 'edit_profil');
 
 	$traitementsAdmin = array();
 
