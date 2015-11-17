@@ -1,5 +1,5 @@
 <h3><a href="?page=article&id=<?=$artlist['id']?>"><?=$artlist['title']?></a></h3>
-<p><?=$artlist['content']?></p>
+<p><em><?=substr($artlist['content'], 0, 120)?>...</em> - <a href='?page=article&id=<?=$artlist['id']?>'>Read more</a></p>
 <p>Posté par <?=$author['login']?>, validé le <?=$artlist['date_validate']?>
 <p>Note : <?=$artlist['note']?> / 5</p>
 <hr>
