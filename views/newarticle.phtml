@@ -1,8 +1,10 @@
 <form method='post' action='?page=newarticle'>
 	<fieldset>
-		<legend>Ajouter un article</legend>
-		<input type='text' name='title' id='title' placeholder='Titre' /><br>
-		<input type='textarea' name='content' id='content' placeholder='Contenu' /><br>
+		<legend>Ajouter un article :</legend>
+		<label for='title'>Titre de l'article :</label><br />
+		<input type='text' name='title' id='title' placeholder='6-27 car.' value="<?=htmlentities($title)?>" /><br><br />
+		<label for='content'>Contenu :</label><br />
+		<input type='textarea' name='content' id='content' placeholder='140-8191 car.' value="<?=htmlentities($content)?>" /><br><br />
 		<button type='submit'>Valider</button>
 	</fieldset>
 </form>
