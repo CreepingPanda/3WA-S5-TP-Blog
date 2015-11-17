@@ -13,7 +13,7 @@ if (isset($_POST['content']))
 		$resultat = mysqli_query($database, $query);
 		if ($resultat)
 		{
-			header('Location: ?page=article'); 
+			header('Location: ?page=article&id='.$_POST['idarticle'].''); 
 			exit;
 		}
 		else
