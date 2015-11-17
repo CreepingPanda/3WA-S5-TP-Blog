@@ -7,10 +7,10 @@
 		<input type='textarea' name='content' id='content' placeholder='140-8191 car.' value="<?=htmlentities($content)?>" /><br><br />
 		<label for='category'>Catégorie :</label><br />
 		<select name='category' id='category'>
-			<option value="1">Tiramisu</option>
-			<option value="2">Pizza</option>
-			<option value="3">Lapins mutants zombies</option>
-			<option value="4">Chèvre miel</option>
+			<option value="<?=htmlentities(1)?>">Tiramisu</option>
+			<option value="<?=htmlentities(2)?>">Pizza</option>
+			<option value="<?=htmlentities(3)?>">Lapins mutants zombies</option>
+			<option value="<?=htmlentities(4)?>">Chèvre miel</option>
 		</select><br /><br />
 		<button type='submit'>Valider</button>
 	</fieldset>

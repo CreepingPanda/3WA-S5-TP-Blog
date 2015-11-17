@@ -1,5 +1,13 @@
 <form method="POST" action="index.php?page=note">
-	<label>note (entre 0 et 5) : <input type="text" name="value" value="<?=htmlentities($content)?>"></label>
+	<label for='note'>Note :</label>
+	<select name='value' id='note'>
+		<option value="<?=htmlentities(0)?>">0</option>
+		<option value="<?=htmlentities(1)?>">1</option>
+		<option value="<?=htmlentities(2)?>">2</option>
+		<option value="<?=htmlentities(3)?>">3</option>
+		<option value="<?=htmlentities(4)?>">4</option>
+		<option value="<?=htmlentities(5)?>">5</option>
+	</select><br />
 	<input type="hidden" name="idarticle" value="<?=$article['id']?>">
 	<input type="submit" value="Valider">
 </form>
