@@ -8,7 +8,7 @@
 	}
 
 	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'newmp', 'newarticle', 'profil', 'register', 'userlist', 'archives', 'edit_profil');
-	$traitements = array('newarticle', 'login', 'mp', 'logout', 'addComment', 'newmp', 'register', 'note', 'edit_profil');
+	$traitements = array('newarticle', 'login', 'mp', 'logout', 'addComment', 'newmp', 'register', 'note', 'edit_profil', 'profil');
 
 	$traitementsAdmin = array();
 
