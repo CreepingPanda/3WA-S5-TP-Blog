@@ -9,8 +9,18 @@
 			$title = $_POST['title'];
 			if ( strlen($_POST['content'])>=140 && strlen($_POST['content'])<=8191 ) {
 				$content = $_POST['content'];
-				$insert = "INSERT INTO articles (title, content, id_author) VALUES ('$title', '$content', '$id_author')";
-				mysqli_query($database, $insert);
+
+				$insertQuery = "INSERT INTO articles (title, content, id_author) VALUES ('$title', '$content', '$id_author')";
+				$selectQuery = "SELECT articles_count FROM users WHERE id = $id_author";
+
+				$selectResult = mysqli_query($database, $selectQuery);
+				$select = mysqli_fetch_assoc($selectResult);
+
+				$countQuery = "UPDATE users SET articles_count = '".$select['articles_count']."'+1 WHERE id = $id_author";
+				
+				mysqli_query($database, $insertQuery);
+				mysqli_query($database, $countQuery);
+				
 				header('Location:index.php?page=artlist');
 				exit;
 			}else {
