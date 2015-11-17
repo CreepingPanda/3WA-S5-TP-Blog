@@ -3,6 +3,7 @@
 
 <h2>"<?=$article['title']?>" par <?=$author['login']?></h2>
 <p><?=$article['content']?></p>
+<?php require('apps/note.php') ?>
 <p><a href='?page=artlist'>> Retour aux articles</a></p>
 <h3>commentaires :</h3>
 <?php require('apps/comments.php') ?>
