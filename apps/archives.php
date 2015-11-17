@@ -1,6 +1,6 @@
 <?php
 
-	$archivesQuery = "SELECT * FROM articles";
+	$archivesQuery = "SELECT * FROM articles WHERE validate = true";
 	$authorQuery = "SELECT * FROM users LEFT JOIN articles ON users.id = articles.id_author";
 
 	$archivesResult = mysqli_query($database, $archivesQuery);
