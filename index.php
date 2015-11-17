@@ -6,13 +6,12 @@
 		die(mysqli_connect_error());
 	}
 
-<<<<<<< HEAD
+
 	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'newmp', 'newarticle', 'profil', 'register', 'userlist');
 	$traitements = array('newarticle', 'login', 'mp', 'logout', 'addComment', 'newmp', 'register');
-=======
+
 	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'newmp', 'newarticle', 'profil', 'register', 'userlist', 'archives');
 	$traitements = array('newarticle', 'login', 'mp', 'logout', 'newcomment', 'newmp', 'register');
->>>>>>> origin/master
 
 	$traitementsAdmin = array();
 
