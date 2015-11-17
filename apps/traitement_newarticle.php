@@ -9,7 +9,7 @@
 			$title = $_POST['title'];
 			if ( strlen($_POST['content'])>=140 && strlen($_POST['content'])<=8191 ) {
 				$content = $_POST['content'];
-
+				// ____ Préparation de l'ajout d'article
 				$insertQuery = "INSERT INTO articles (title, content, id_author) VALUES ('$title', '$content', '$id_author')";
 				$selectQuery = "SELECT articles_count FROM users WHERE id = $id_author";
 

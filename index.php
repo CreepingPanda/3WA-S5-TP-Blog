@@ -1,5 +1,4 @@
 <?php
-	header('Content-Type: text/html; charset=utf-8');
 	session_start();
 
 	$database = mysqli_connect('192.168.1.26', 'shadowblog', 'shadowblog', 'shadowblog');
