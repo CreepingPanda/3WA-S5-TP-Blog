@@ -5,8 +5,8 @@
 	if ( $database == false )
 		{ die(mysqli_connect_error()); }
 
-	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'newmp', 'newarticle', 'profil', 'register', 'userlist');
-	$traitements = array('newarticle', 'login', 'mp', 'logout', 'newcomment', 'newmp', 'register');
+	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'newmp', 'newarticle', 'profil', 'register', 'userlist', 'edit_profil');
+	$traitements = array('newarticle', 'login', 'mp', 'logout', 'newcomment', 'newmp', 'register', 'profil', 'edit_profil');
 
 	$traitementsAdmin = array();
 
