@@ -1,11 +1,11 @@
 <?php
 
-	$artlistQuery = "SELECT * FROM articles LIMIT 0, 5";
+	$archivesQuery = "SELECT * FROM articles";
 	$authorQuery = "SELECT * FROM users INNER JOIN articles ON users.id = articles.id_author";
 
-	$artlistResult = mysqli_query($database, $artlistQuery);
+	$archivesResult = mysqli_query($database, $archivesQuery);
 	$authorResult = mysqli_query($database, $authorQuery);
 
-	require('views/artlist.phtml');
+	require('views/archives.phtml');
 
 ?>

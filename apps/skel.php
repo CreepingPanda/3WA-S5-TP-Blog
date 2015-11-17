@@ -1,4 +1,4 @@
 <?php
-$title = "ShadowPikachu";
+$titre = "ShadowPikachu";
 require('views/skel.phtml');
 ?>

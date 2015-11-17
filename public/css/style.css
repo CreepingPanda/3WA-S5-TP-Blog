@@ -28,3 +28,30 @@
   text-transform: uppercase;
   color: #5BC0DE;
 }
+
+              /*user list*/
+.list_user ul{
+  padding: 0;
+}
+.list_user ul li{
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  padding: 8px 0;
+}
+
+.list_user ul li:hover{
+  background-color: #337AB7;
+
+}
+
+.list_user a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.list_user a:hover{
+  color: white;
+}
+
