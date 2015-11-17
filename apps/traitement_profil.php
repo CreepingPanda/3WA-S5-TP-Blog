@@ -27,6 +27,11 @@ if (isset($_SESSION['id']))
 	$queryValid = "SELECT validate FROM articles WHERE id_author='".$id."'AND validate=1 ";
 	$resultValid = mysqli_query($database, $queryValid);
 
+	$countValid = "SELECT COUNT(articles.id) AS nbr FROM articles WHERE articles.validate=1 AND articles.id_author='".$id."'";
+	$resultCountValid = mysqli_query($database, $countValid);
+	$dataCountValid = mysqli_fetch_assoc($resultCountValid);
+
+
 
 
 
