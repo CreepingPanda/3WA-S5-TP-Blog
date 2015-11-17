@@ -6,7 +6,7 @@
 		die(mysqli_connect_error());
 	}
 
-	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'newmp', 'newarticle', 'profil', 'register', 'userlist');
+	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'newmp', 'newarticle', 'profil', 'register', 'userlist', 'archives');
 	$traitements = array('newarticle', 'login', 'mp', 'logout', 'newcomment', 'newmp', 'register');
 
 	$traitementsAdmin = array();
