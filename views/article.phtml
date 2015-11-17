@@ -1,7 +1,4 @@
-
-<h2>Article sélectionné : <?=$article['title']?></h2>
-
-<h2>"<?=$article['title']?>" par <?=$author['login']?></h2>
+<h2><strong><?=$article['title']?></strong> par <em><?=$author['login']?></em></h2>
 <p><?=$article['content']?></p>
 <?php require('apps/note.php') ?>
 <p><a href='?page=artlist'>> Retour aux articles</a></p>

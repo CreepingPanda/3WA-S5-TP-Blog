@@ -1,5 +1,4 @@
 <?php
-	header('Content-Type: text/html; charset=utf-8');
 	session_start();
 
 	$database = mysqli_connect('192.168.1.26', 'shadowblog', 'shadowblog', 'shadowblog');
@@ -7,8 +6,8 @@
 		die(mysqli_connect_error());
 	}
 
-	$ways = array('home', 'article', 'artlist', 'login', 'mp','addMp', 'newmp', 'newarticle', 'profil', 'register', 'userlist', 'archives');
-	$traitements = array('newarticle', 'login', 'mp', 'logout', 'addComment', 'newmp','addMp', 'register', 'note');
+	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'newmp', 'newarticle', 'profil', 'register', 'userlist', 'archives', 'edit_profil');
+	$traitements = array('newarticle', 'login', 'mp', 'logout', 'addComment', 'newmp', 'register', 'note', 'edit_profil', 'profil');
 
 	$traitementsAdmin = array();
 

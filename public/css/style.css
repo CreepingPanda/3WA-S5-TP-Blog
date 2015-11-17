@@ -1,5 +1,11 @@
+
+.container {
+  padding:0 5px;
+}
+
 body {
   background-color: #D2D2D2; }
+
 
 .navbar {
   border-radius: 0;
@@ -13,6 +19,10 @@ body {
 }
 .dropdown-menu {
   padding: 10px 10px;
+}
+.dropdown-menu .lien-profil{
+  display:block;
+  padding-bottom: 10px;
 }
 .dropdown-menu .form-signin h2 {
   font-size: 2rem;
@@ -77,3 +87,29 @@ table{
   
   }
 
+/*------------page profil-------------*/
+.aside {
+  padding:0;
+  margin-top:20px;
+}
+.aside img {
+  width:100%;
+}
+
+.label-profil{
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.btn-edit{
+  padding: 20px 0;
+}
+
+.btn-edit .btn a {
+  color: #fff;
+}
+
+.btn-edit .btn a:hover {
+  color: #fff;
+  text-decoration: none;
+}

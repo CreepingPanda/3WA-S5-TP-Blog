@@ -1,0 +1,27 @@
+<div class="col-md-3 col-sm-12 col-xs-12 aside">
+	<img src="<?=$dataUsers['avatar']?>" alt="image profil"/>
+</div>
+
+<div class="col-md-9 col-sm-12 col-xs-12">
+	<h2><span class="login"><?php echo $_SESSION['login']; ?></span></h2>
+	<div role="separator" class="divider"></div>
+
+	<p class="label-profil">Nom : </p><?=$dataUsers['nom']?>
+	</br>
+	<p class="label-profil">Prénom : </p><?php echo $dataUsers['prenom']?>
+	</br>
+	<p class="label-profil">Email : </p><?php echo $dataUsers['email']?>
+	</br>
+	<p class="label-profil">Nombre d'articles postés : </p><?php echo $dataCountArticles['articles_count'] ?>
+	</br>
+	<p class="label-profil">Nombre d'articles validés : </p><?php echo $dataCountValid['nbr'] ?>
+	</br>
+
+	<div class="btn-edit col-md-3 col-sm-3 col-xs-3">
+	 <a class="btn btn-info btn-block" href="?page=edit_profil">Modifier le profil</a> 
+	</div>
+
+	
+
+</div> 
+
