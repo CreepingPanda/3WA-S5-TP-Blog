@@ -54,6 +54,7 @@ table{
 
 .list_user td{
   overflow: hidden;
+  width: 100%;
 }
 .list_user tr td {
   text-decoration: none;
@@ -63,9 +64,7 @@ table{
   display: block;
 }
 
-.list_user tr td:hover{
 
-}
 
 
 .list_user button{
@@ -74,7 +73,7 @@ table{
 }
 
 .list_user .nbr{
-  padding: 20px;
+  padding: 5 20px;
 
 
 }
@@ -86,6 +85,30 @@ table{
   
   
   }
+  .list_user .login_post{
+  
+  display: inline-block;
+  width: 20%;
+  
+  
+  
+  }
+  .list_user .top ul {
+    padding: 0 0 0 10px;
+    margin-bottom: 20px;
+  }
+  .list_user .top ul li{
+   display: inline-block;
+    font-weight: bold;
+  }
+  .list_user .top ul .pseudos{
+    width: 32%;
+  }
+
+.list_user .top ul .nb_article{
+  width: 28%
+}
+
 
 /*------------page profil-------------*/
 .aside {
