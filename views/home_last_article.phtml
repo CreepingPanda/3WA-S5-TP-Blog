@@ -1,2 +1,3 @@
-<h3><a href='?page=article&id=<?=$lastArticle['id']?>'><?=$lastArticle['title']?></a></h3>
+<h3><?=$lastArticle['title']?></h3>
 <p>Auteur : <?=$author['login']?></p>
+<em><?=substr($lastArticle['content'], 0, 120)?>...</em> - <a href='?page=article&id=<?=$lastArticle['id']?>'>Read more</a>
