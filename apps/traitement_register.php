@@ -38,7 +38,11 @@ if (isset($_POST['login'], $_POST['password'], $_POST['password2'], $_POST['emai
 	if (count($errors) == 0)
 	{
 		$hash = password_hash($_POST['password'], PASSWORD_BCRYPT, array("cost"=>10));
-		$query = "INSERT INTO users (login, nom, prenom, email, password) VALUES('$login', '$nom', '$prenom', '$email', '$hash')";
+		$jour = date('j');
+		$mois = date('M');
+		$annee = date('Y');
+		$date_register = $jour.' '.$mois.' '.$annee;
+		$query = "INSERT INTO users (date_register, login, nom, prenom, email, password) VALUES('$date_register', '$login', '$nom', '$prenom', '$email', '$hash')";
 		$resultat = mysqli_query($database, $query);
 
 		header('Location: index.php?page=login');
