@@ -1,11 +1,12 @@
 <div class="mpContent">
-	<h5>
-		Message de <a href="?page=profil&id=<?php echo $mp['id_writer'] ?>"><?php echo $mp['login'] ?></a>
-	</h5>
-	<p>
-		<?php echo $mp['content'] ?>
+	<p class="title-mp">
+			Message de <a href="?page=profil&id=<?php echo $mp['id_writer'] ?>"><?php echo $mp['login'] ?></a>:
 	</p>
+	<p class="mp">
+		<?php echo nl2br( $mp['content'] );?>
+	</p>
+	<br/>
 	<p>
-		<button><a href="?page=addMp&idTarget=<?=$mp['id_writer']?>">Répondre</a></button>
+		<button type="button" class="btn btn-primary"><a href="?page=addMp&idTarget=<?=$mp['id_writer']?>">Répondre</a></button>
 	</p>
 </div>
