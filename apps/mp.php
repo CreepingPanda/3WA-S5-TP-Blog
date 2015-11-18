@@ -3,6 +3,12 @@
 	$mpPerso = mysqli_query($database, $query);
 	while($mp = mysqli_fetch_assoc($mpPerso))
 	{
-		require('views/mp.phtml');
+		if (isset($_SESSION['id']))
+		{
+			$content = '';
+			require('views/mp.phtml');
+			require('views/mpRep.phtml');
+		
+		}
 	}
  ?>
