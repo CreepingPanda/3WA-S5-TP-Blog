@@ -5,6 +5,7 @@ $login = "";
 $email= "";
 $password = "";
 $password2 = "";
+$avatar = "";
 if (isset($_POST['login'], $_POST['password'], $_POST['password2'], $_POST['email'], $_POST['nom'], $_POST['prenom']))
 {
 	$login = $_POST['login'];
@@ -13,6 +14,7 @@ if (isset($_POST['login'], $_POST['password'], $_POST['password2'], $_POST['emai
 	$prenom = $_POST['prenom'];
 	$password = $_POST['password'];
 	$password2 = $_POST['password2'];
+	$avatar = "http://www.laqt.org/images/pages/2013-10-16-16-29avatar";
 
 	if ($password != $password2)
 	{
@@ -42,7 +44,7 @@ if (isset($_POST['login'], $_POST['password'], $_POST['password2'], $_POST['emai
 		$mois = date('M');
 		$annee = date('Y');
 		$date_register = $jour.' '.$mois.' '.$annee;
-		$query = "INSERT INTO users (date_register, login, nom, prenom, email, password) VALUES('$date_register', '$login', '$nom', '$prenom', '$email', '$hash')";
+		$query = "INSERT INTO users (date_register, login, nom, prenom, email, password, avatar) VALUES('$date_register', '$login', '$nom', '$prenom', '$email', '$hash', '$avatar')";
 		$resultat = mysqli_query($database, $query);
 
 		header('Location: index.php?page=login');
