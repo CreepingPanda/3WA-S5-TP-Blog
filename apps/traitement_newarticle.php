@@ -4,12 +4,12 @@
 	$content = "";
 
 	if ( isset($_POST['title'], $_POST['content'], $_POST['category'], $_SESSION['id']) ) {
-		$id_category = $_POST['category'];
+		$id_category = mysqli_real_escape_string($_POST['category']);
 		$id_author = $_SESSION['id'];
 		if ( strlen($_POST['title'])>=6 && strlen($_POST['title'])<=127 ) {
-			$title = $_POST['title'];
+			$title = mysqli_real_escape_string($_POST['title']);
 			if ( strlen($_POST['content'])>=140 && strlen($_POST['content'])<=8191 ) {
-				$content = $_POST['content'];
+				$content = mysqli_real_escape_string($_POST['content']);
 				// ____ Précalcul de la date
 				$jour = date('j');
 				$mois = date('M');
