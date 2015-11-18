@@ -155,9 +155,22 @@ table{
 
 
 /* ---------------    MESSAGE PRIVE  -------------   */
-
-.mpContent{
-  border:3px solid black;
-  margin-bottom: 2em;
-  padding-left: 1em;
+.mp{
+  border-radius: 10px;
+  background: #fff;
+  height: 200px;
+  padding: 5px;
 }
+.title-mp{
+  font-size: 20px;
+}
+.title-New-mp{
+  border-radius: 10px;
+  background: #337AB7;
+  color: #fff;
+  padding: 5px;
+}
+.btn-primary a{
+  color: #fff;
+}
+
