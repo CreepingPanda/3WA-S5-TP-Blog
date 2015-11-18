@@ -4,7 +4,7 @@
 		require('views/user_list_admin.phtml');
 	
 	
-	$_POST['statut'];
+	
 }
 
 ?>
