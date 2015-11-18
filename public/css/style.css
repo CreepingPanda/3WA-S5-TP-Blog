@@ -141,7 +141,7 @@ table{
   margin-right: 5px;
 }
 .btn-edit{
-  padding: 20px 0;
+  padding: 14px 0;
 }
 
 .btn-edit .btn a {
@@ -151,6 +151,15 @@ table{
 .btn-edit .btn a:hover {
   color: #fff;
   text-decoration: none;
+}
+
+.btn-profil {
+  padding: 0;
+}
+
+.mp {
+  display: block;
+  padding: 0;
 }
 
 
