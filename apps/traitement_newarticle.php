@@ -23,12 +23,12 @@
 				}else {
 					$insertQuery = "INSERT INTO articles (date_post, title, content, id_author, id_category) VALUES ('$date_post', '$title', '$content', '$id_author', '$id_category')";
 				}
-				$selectQuery = "SELECT articles_count FROM users WHERE id = $id_author";
 
+				$selectQuery = "SELECT articles_count FROM users WHERE id = $id_author";
 				$selectResult = mysqli_query($database, $selectQuery);
 				$select = mysqli_fetch_assoc($selectResult);
-
 				$countQuery = "UPDATE users SET articles_count = '".$select['articles_count']."'+1 WHERE id = $id_author";
+				
 				mysqli_query($database, $insertQuery);
 				mysqli_query($database, $countQuery);
 
