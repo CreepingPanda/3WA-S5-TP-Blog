@@ -11,6 +11,10 @@
 		$article = mysqli_fetch_assoc($articleResult);
 		$author = mysqli_fetch_assoc($authorResult);
 
+		$categoryQuery = "SELECT * FROM category WHERE id = '".$article['id_category']."'";
+		$categoryResult = mysqli_query($database, $categoryQuery);
+		$category = mysqli_fetch_assoc($categoryResult);
+
 		require('views/article.phtml');
 	}
 ?>

@@ -10,6 +10,11 @@
 	// ____ Auteur de l'article ____
 	$author = mysqli_fetch_assoc($authorResult);
 
+	$categoryQuery = "SELECT * FROM category WHERE id = '".$lastArticle['id_category']."'";
+	$categoryResult = mysqli_query($database, $categoryQuery);
+	// ____ Catégorie de l'article
+	$category = mysqli_fetch_assoc($categoryResult);
+
 	require('views/home_last_article.phtml');
 
 ?>
