@@ -1,6 +1,11 @@
-<table>
-	<tr>
-		message de <?php echo $mp['login'] ?>
-		<?php var_dump($mp) ?>
-	</tr>
-</table>
+<div class="mpContent">
+	<h5>
+		Message de <a href="?page=profil&id=<?php echo $mp['id_writer'] ?>"><?php echo $mp['login'] ?></a>
+	</h5>
+	<p>
+		<?php echo $mp['content'] ?>
+	</p>
+	<p>
+		<button><a href="?page=addMp&idTarget=<?=$mp['id_writer']?>">Répondre</a></button>
+	</p>
+</div>
