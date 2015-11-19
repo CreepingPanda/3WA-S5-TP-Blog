@@ -1,4 +1,4 @@
-
+              /*    BORDEL*/
 .container {
   padding:0 5px;
 }
@@ -6,7 +6,13 @@
 body {
   background-color: #D2D2D2; }
 
+img{
+  max-width: 100%;
+  max-width: 1500px;
+  max-height: 1500px;
+}
 
+            /*  NAVBAR*/
 .navbar {
   border-radius: 0;
 }
@@ -106,11 +112,11 @@ table{
     font-weight: bold;
   }
   .list_user .top ul .pseudos{
-    width: 23%;
+    width: 25%;
   }
 
 .list_user .top ul .nb_article{
-  width: 22%
+  width: 19%
 }
 
 .list_user select{
@@ -194,3 +200,15 @@ table{
   color: #fff;
 }
 
+           /*   ARTICLES*/
+
+          /*  COMMENTAIRE*/
+
+.com{
+  text-decoration: underline;
+}
+.autheurCom{
+}
+.contentCom{
+  font-size: 1.3em;
+}
