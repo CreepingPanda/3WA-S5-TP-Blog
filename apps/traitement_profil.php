@@ -26,6 +26,10 @@ $id = 0;
 	$resultCountValid = mysqli_query($database, $countValid);
 	$dataCountValid = mysqli_fetch_assoc($resultCountValid);
 
+	$countNote = "SELECT id_author, AVG(note) AS moyenne FROM articles WHERE articles.id_author='".$id."'" ;
+	$resultCountNote = mysqli_query($database, $countNote);
+	$dataCountNote = mysqli_fetch_assoc($resultCountNote);
+
 
 ?>
 
