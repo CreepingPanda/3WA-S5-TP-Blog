@@ -141,7 +141,7 @@ table{
   margin-right: 5px;
 }
 .btn-edit{
-  padding: 20px 0;
+  padding: 14px 0;
 }
 
 .btn-edit .btn a {
@@ -153,12 +153,20 @@ table{
   text-decoration: none;
 }
 
+.btn-profil {
+  padding: 0;
+}
+
+.btn-mp {
+  display: block;
+  padding: 0;
+}
+
 
 /* ---------------    MESSAGE PRIVE  -------------   */
 .mp{
   border-radius: 10px;
   background: #fff;
-  height: 200px;
   padding: 5px;
 }
 .title-mp{

@@ -7,13 +7,13 @@
 	}
 
 	$ways = array('home', 'article', 'artlist', 'login', 'mp', 'addMp', 'newarticle', 'profil', 'register', 'userlist', 'archives', 'edit_profil');
-	$traitements = array('article', 'newarticle', 'login', 'logout', 'addComment', 'addMp', 'register', 'note', 'edit_profil', 'profil', 'statut');
 
-	$traitementsAdmin = array();
+	$traitements = array('article', 'newarticle', 'login', 'logout', 'addComment', 'addMp', 'register', 'note', 'edit_profil', 'profil');
+
+	$traitementsAdmin = array('statut');
 
 	$page = 'home';
 	$errors = array();
-
 	if ( isset($_GET['page']) ) {
 		if ( in_array($_GET['page'], $traitements) ) {
 			require('apps/traitement_'.$_GET['page'].'.php');

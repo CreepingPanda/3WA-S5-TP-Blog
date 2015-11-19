@@ -1,12 +1,12 @@
-<form action="index.php?page=statut" methode="post">
+<form action="index.php?page=statut" method="post">
 
 <select class="form-control" name='statut' id='statut'>
 	<option></option>
   <option value="0">Banni</option>
-  <option value"1">Utilisateur</option>
-  <option value"2">Admin</option>
+  <option value="1">Utilisateur</option>
+  <option value="2">Admin</option>
 </select>
-
+<input type="hidden" value="<?=$user['id']?>" name="id">
 <button type="submit" class="btn btn-warning validation">valider modification</button>
 
 </form>

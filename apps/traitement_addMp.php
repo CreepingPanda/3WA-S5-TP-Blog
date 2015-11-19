@@ -24,7 +24,7 @@ if (isset($_POST['content'], $_POST['loginTarget'], $_SESSION['id']))
 		$resultat = mysqli_query($database, $query);
 		if ($resultat)
 		{
-			header('Location: ?page=addMp'); 
+			header('Location: ?page=mp'); 
 			exit;
 		}
 		else
