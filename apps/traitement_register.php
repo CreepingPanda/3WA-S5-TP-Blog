@@ -16,6 +16,15 @@ if (isset($_POST['login'], $_POST['password'], $_POST['password2'], $_POST['emai
 	$password2 = $_POST['password2'];
 	$avatar = "http://www.laqt.org/images/pages/2013-10-16-16-29avatar";
 
+	$query = "SELECT users.login FROM users WHERE login='".$login."'";
+	$test= mysqli_query($database, $query);
+	$testLogin = mysqli_fetch_assoc($test);
+
+	if ($login == $testLogin['login'])
+	{
+		$errors[]= "login déjà utilisé";
+	}
+
 	if ($password != $password2)
 	{
 		$errors[] = "Les mots de passe ne correspondent pas";
