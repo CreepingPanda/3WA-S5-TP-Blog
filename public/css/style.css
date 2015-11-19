@@ -173,10 +173,8 @@ table{
   font-size: 20px;
 }
 .title-New-mp{
-  border-radius: 10px;
-  background: #337AB7;
-  color: #fff;
-  padding: 5px;
+  color: #000;
+  
 }
 .btn-primary a{
   color: #fff;
