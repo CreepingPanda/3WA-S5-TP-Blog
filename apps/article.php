@@ -17,15 +17,20 @@
 		$categoryResult = mysqli_query($database, $categoryQuery);
 		$category = mysqli_fetch_assoc($categoryResult);
 
-		// ____ Calcul moyenne
+		// ____ Requête notes
 		$notesQuery = "SELECT * FROM notes WHERE id = '".$article['id']."'";
 		$notesResult = mysqli_query($database, $notesQuery);
 
+		// ____ Calcul note moyenne
 		$total = 0;
+		$i = 0;
 		while ( $notes = mysqli_fetch_assoc($notesResult) ) {
-			$moyenne = ($total + $notes['value']) / count($notes);
+			$total = $total + $notes['value'];
+			$i++;
 		}
+		$moyenne = $total / $i;
 
+		// ____ Update note moyenne
 		if ( $article['note'] != $moyenne ) {
 			$updateNoteQuery = "UPDATE articles SET note = '".$moyenne."'";
 			mysqli_query($database, $updateNoteQuery);
