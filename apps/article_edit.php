@@ -22,7 +22,7 @@
 		$editAssoc = mysqli_fetch_assoc($editResult);
 		$edit = $editAssoc['id_author'];
 
-		if ( $edit == $_SESSION['id'] ) {
+		if ( $edit == $_SESSION['id'] || $_SESSION['rights']==2 ) {
 			require('views/article_edit.phtml');
 		}
 	}else {
