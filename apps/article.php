@@ -31,12 +31,12 @@
 				$i++;
 			}
 			$moyenne = $total / $i;
-		}
 
-		// ____ Update note moyenne
-		if ( $article['note'] != $moyenne ) {
-			$updateNoteQuery = "UPDATE articles SET note = '".$moyenne."'";
-			mysqli_query($database, $updateNoteQuery);
+			// ____ Update note moyenne
+			if ( $article['note'] != $moyenne ) {
+				$updateNoteQuery = "UPDATE articles SET note = '".$moyenne."'";
+				mysqli_query($database, $updateNoteQuery);
+			}
 		}
 
 		require('views/article.phtml');
