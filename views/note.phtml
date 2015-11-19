@@ -1,13 +1,17 @@
 <form method="POST" action="index.php?page=note&id=<?=$_GET['id']?>">
+	<div class="note-select col-md-5 col-sm-5 col-xs-5">
 	<label for='note'>Note :</label>
-	<select name='value' id='note'>
+	<select class="select-note btn btn-info btn-block" name='value' id='note'>
 		<option value="<?=htmlentities(0)?>">0</option>
 		<option value="<?=htmlentities(1)?>">1</option>
 		<option value="<?=htmlentities(2)?>">2</option>
 		<option value="<?=htmlentities(3)?>">3</option>
 		<option value="<?=htmlentities(4)?>">4</option>
 		<option value="<?=htmlentities(5)?>">5</option>
-	</select><br />
+	</select>
+	</div>
+	<div class="note-valid col-md-3 col-sm-3 col-xs-3">
 	<input type="hidden" name="idarticle" value="<?=$article['id']?>">
-	<input type="submit" value="Valider">
+	<input class="btn btn-info btn-block" type="submit" value="Valider">
+	</div>
 </form>
