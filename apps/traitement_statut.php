@@ -1,6 +1,6 @@
 <?php
-echo "toto";
-var_dump($_POST, $_GET); 
+// echo "toto";
+// var_dump($_POST, $_GET); 
 
 
 
