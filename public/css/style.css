@@ -190,9 +190,12 @@ table{
   background: #fff;
   padding: 5px;
   min-height: 80px;
+  border: 1px solid #337AB7;
 }
 .title-mp{
   font-size: 20px;
+  
+
 }
 .title-New-mp{
   color: #000;
@@ -203,6 +206,31 @@ table{
 }
 
            /*   ARTICLES*/
+
+.select-note {
+  color:#000;
+  background: #fff;
+  display: inline-block;
+}
+.select-note:hover {
+  color:#000;
+  background: #fff;
+}
+
+.select-note:active {
+  color:#000;
+  background: #fff;
+}
+
+.note-valid {
+  padding-top: 24px;
+}
+.note-select {
+  padding: 0;
+}
+.article-back {
+  padding: 0;
+}
 
           /*  COMMENTAIRE*/
 

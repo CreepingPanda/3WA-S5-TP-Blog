@@ -1,7 +1,9 @@
 <?php require('apps/delete_article.php'); ?>
 <?php require('apps/article_edit_btn.php'); ?>
 
-<h2><strong><?=$article['title']?></strong> par <em><?=$author['login']?></em></h2>
+<h2><strong><?=$article['title']?></strong> <small>par <span class="login"><a href="?page=profil&id=<?=$author['id']?>"><?=$author['login']?></a></span></small></h2>
+<h4><?php require('apps/note_display.php'); ?></h4>
+
 <h4>Catégorie : <?=$category['name']?></h4>
 
 <div class="row">
@@ -11,7 +13,10 @@
 	<div class="col-md-8">
 		<p><?=$article['content']?></p>
 		<?php require('apps/note.php') ?>
-		<p><a href='?page=artlist'>> Retour aux articles</a></p>
+		<div class="article-back col-md-6 col-sm-6 col-xs-6">
+			<a href='?page=artlist'>> Retour aux articles</a>
+		</div>
+		
 	</div>
 </div>
 

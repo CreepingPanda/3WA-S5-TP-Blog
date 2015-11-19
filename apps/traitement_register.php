@@ -8,11 +8,11 @@ $password2 = "";
 $avatar = "";
 if (isset($_POST['login'], $_POST['password'], $_POST['password2'], $_POST['email'], $_POST['nom'], $_POST['prenom']))
 {
-	$login = $_POST['login'];
-	$email = $_POST['email'];
-	$nom = $_POST['nom'];
-	$prenom = $_POST['prenom'];
-	$password = $_POST['password'];
+	$login = mysqli_real_escape_string($database, $_POST['login']);
+	$email = mysqli_real_escape_string($database, $_POST['email']);
+	$nom = mysqli_real_escape_string($database, $_POST['nom']);
+	$prenom = mysqli_real_escape_string($database, $_POST['prenom']);
+	$password = mysqli_real_escape_string($database, $_POST['password']);
 	$password2 = $_POST['password2'];
 	$avatar = "http://www.laqt.org/images/pages/2013-10-16-16-29avatar";
 
