@@ -112,11 +112,11 @@ table{
     font-weight: bold;
   }
   .list_user .top ul .pseudos{
-    width: 23%;
+    width: 24%;
   }
 
 .list_user .top ul .nb_article{
-  width: 22%
+  width: 19%
 }
 
 .list_user select{
@@ -129,7 +129,6 @@ table{
 .list_user form{
   display: inline-block;
 }
-
 
 
 /*------------page profil-------------*/
