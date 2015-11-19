@@ -2,7 +2,7 @@
 
 	<span class="login_pos"><a href="?page=profil&id=<?=$user['id']?>"><?=$user['login']?></a></span>
 	<span class="nbr login_post"><?=$user['nbr']?></span>
-	<button type="button " class="btn btn-primary"><a href="?page=addMp&login=<?=$user['login']?>">contact</a></button>
+	<button type="button " class="btn btn-primary"><a href="?page=addMp&idTarget=<?=$user['id']?>">contact</a></button>
 
 <?php
 require('apps/user_list_admin.php')
