@@ -1,10 +1,13 @@
 <fieldset>
+
+	<div>
+	
 	<div class='row'>
 		<div class="col-md-1 col-xs-1">
 			<div class="autheurCom">
 				<img src="<?=$comment['avatar'] ?>" alt="tg" width="100%">
 				<p>
-					<?=$comment['login'] ; ?><br>
+					<a href="?page=profil&id=<?=$author['id']?>"><?=$comment['login'] ; ?></a><br>
 				</p>
 			</div>
 		</div>
@@ -13,5 +16,6 @@
 				<?=$comment['content'] ; ?><br>
 			</p>
 		</div>
+
 	</div>
 </fieldset>
