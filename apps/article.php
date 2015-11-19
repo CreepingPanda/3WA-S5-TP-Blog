@@ -18,24 +18,28 @@
 		$category = mysqli_fetch_assoc($categoryResult);
 
 		// ____ Requête notes
-		$notesQuery = "SELECT * FROM notes WHERE id = '".$article['id']."'";
+		$notesQuery = "SELECT * FROM notes WHERE id_article = '".$article['id']."'";
 		$notesResult = mysqli_query($database, $notesQuery);
+		$notes = mysqli_fetch_assoc($notesResult);
 
 		// ____ Calcul note moyenne
-		$total = 0;
-		$i = 0;
-		while ( $notes = mysqli_fetch_assoc($notesResult) ) {
-			$total = $total + $notes['value'];
-			$i++;
-		}
+		$moyenne = 0;
+		if ( $notes ) {
+			$total = 0;
+			$i = 0;
+			while ( $notes = mysqli_fetch_assoc($notesResult) ) {
+				$total = $total + $notes['value'];
+				$i++;
+			}
 			$moyenne = $total / $i;
+		}
 
 		// ____ Update note moyenne
 		if ( $article['note'] != $moyenne ) {
 			$updateNoteQuery = "UPDATE articles SET note = '".$moyenne."'";
 			mysqli_query($database, $updateNoteQuery);
 		}
- 
+
 		require('views/article.phtml');
 	}
 ?>
