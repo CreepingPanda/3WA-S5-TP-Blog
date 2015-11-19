@@ -4,11 +4,16 @@
 }
 
 body {
-  background-color: #D2D2D2; }
+  background-color: #D2D2D2;
+  font-family:'Arimo', sans-serif;
+}
 
 img{
   max-width: 1500px;
   max-height: 1500px;
+}
+h1, h2, h3{
+  font-family: 'Bitter', serif; 
 }
 
             /*  NAVBAR*/
@@ -182,9 +187,9 @@ table{
 
 /* ---------------    MESSAGE PRIVE  -------------   */
 .mp{
-  border-radius: 10px;
   background: #fff;
   padding: 5px;
+  min-height: 80px;
 }
 .title-mp{
   font-size: 20px;
@@ -205,7 +210,11 @@ table{
   text-decoration: underline;
 }
 .autheurCom{
+
 }
 .contentCom{
   font-size: 1.3em;
+  background-color: white;
+  min-height: 80px;
+  padding: 5px;
 }
