@@ -23,7 +23,7 @@
 		$notes = mysqli_fetch_assoc($notesResult);
 
 		// ____ Calcul note moyenne
-		if ( $notes ) {
+		if ( $article['note'] ) {
 			$total = 0;
 			$i = 0;
 			while ( $notes = mysqli_fetch_assoc($notesResult) ) {
