@@ -1,1 +1,19 @@
-<p>Salut</p>
+<h2><strong><?=$article['title']?></strong> par <em><?=$author['login']?></em></h2>
+<h4>Catégorie : <?=$category['name']?></h4>
+
+<figure><img src='<?=$article['image']?>' alt='Figure' width='20%' /></figure>
+<h4>Aperçu du contenu :</h4>
+<div>
+	<?=$article['content']?>
+</div>
+
+<form action="?page=article_edit&id=<?=$_GET['id']?>" method="post">
+	<fieldset>
+		<legend>Modification de l'article</legend>
+			<label for="title">Titre :</label><br />
+				<input type="text" name="title" id="title" value="<?=htmlentities($article['title'])?>" /><br /><br />
+			<label for="content">Contenu :</label><br />
+				<input type="textarea" name="content" id="title" value="<?=htmlentities($article['content'])?>" /><br /><br />
+			<button type="submit">Valider les modifications</button>
+	</fieldset>
+</form>
