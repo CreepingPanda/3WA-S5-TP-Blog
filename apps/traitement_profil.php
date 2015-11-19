@@ -4,7 +4,7 @@
 $id = 0;
 
 
-	$id = $_GET['id'];
+	$id = intval($_GET['id']);
 
 	$queryUsers = "SELECT * FROM users WHERE id='".$id."'";
 	$resultUsers = mysqli_query($database, $queryUsers);
