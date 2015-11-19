@@ -1,10 +1,11 @@
 <div class="col-md-3 col-sm-12 col-xs-12 aside">
 	<img src="<?=$dataUsers['avatar']?>" alt="image profil"/>
+		<?php require('apps/btn_edit.php'); ?>	
 </div>
 
-<div class="col-md-9 col-sm-12 col-xs-12">
+
+<div class="p-left col-md-4 col-sm-4 col-xs-12">
 	<h2><span class="login"><?php echo $dataUsers['login']; ?></span></h2>
-	<div role="separator" class="divider"></div>
 
 	<p class="label-profil">Nom : </p><?=$dataUsers['nom'];?>
 	</br>
@@ -12,18 +13,23 @@
 	</br>
 	<p class="label-profil">Email : </p><?php echo $dataUsers['email'];?>
 	</br>
+	<?php require('apps/btn_mp.php'); ?>
+</div>	
+<div class="p-right col-md-5 col-sm-5 col-xs-12">
+	</br>
 	<p class="label-profil">Nombre d'articles postés : </p><?php echo $dataCountArticles['articles_count'] ;?>
 	</br>
 	<p class="label-profil">Nombre d'articles validés : </p><?php echo $dataCountValid['nbr']; ?>
 	</br>
 	<p class="label-profil">Note moyenne des articles : </p><?php echo $dataCountNote['moyenne']; ?>
-	</br>
-	<div class="btn-profil col-md-12 col-sm-12 col-xs-12">
-		<?php require('apps/btn_mp.php'); ?>
-	</div>
+
+
 	
-	<?php require('apps/btn_edit.php'); ?>
 	
+</div>	
+	
+	
+
 
 	
 

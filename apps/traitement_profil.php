@@ -30,6 +30,9 @@ $id = 0;
 	$resultCountNote = mysqli_query($database, $countNote);
 	$dataCountNote = mysqli_fetch_assoc($resultCountNote);
 
+	if ($dataCountNote['moyenne'] == null) {
+		$dataCountNote['moyenne'] = 'pas de note';
+	}
 
 ?>
 
