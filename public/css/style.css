@@ -161,7 +161,19 @@ table{
   display: block;
   padding: 0;
 }
-
+.btn-info {
+  margin:5px 0;
+  border-radius: 0;
+}
+.p-left {
+  margin-top: 20px;
+}
+.p-left h2 {
+ margin-top: 0;
+}
+.p-right {
+  padding:45px 0;
+}
 
 /* ---------------    MESSAGE PRIVE  -------------   */
 .mp{
