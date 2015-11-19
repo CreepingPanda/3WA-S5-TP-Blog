@@ -1,10 +1,21 @@
 <fieldset>
+
 	<div>
-		<p class="auteurCom">
-			auteur : <a href="?page=profil&id=<?=$author['id']?>"><?=$comment['login'] ; ?></a><br>
-		</p>
-		<p class="contentCom">
-			<?=$comment['content'] ; ?><br>
-		</p>
+	
+	<div class='row'>
+		<div class="col-md-1 col-xs-1">
+			<div class="autheurCom">
+				<img src="<?=$comment['avatar'] ?>" alt="tg" width="100%">
+				<p>
+					<a href="?page=profil&id=<?=$author['id']?>"><?=$comment['login'] ; ?></a><br>
+				</p>
+			</div>
+		</div>
+		<div class="col-md-11 col-xs-11">
+			<p class="contentCom">
+				<?=$comment['content'] ; ?><br>
+			</p>
+		</div>
+
 	</div>
 </fieldset>
