@@ -25,6 +25,7 @@
 					}else {
 						$errors[] = "Le titre doit contenir entre 6 et 140 caractères.";
 					}
+					
 				}else {
 					$errors[] = "L'article doit contenir entre 140 et 8191 caractères.";
 				}

@@ -3,12 +3,11 @@
 		$idArticle = $_GET['id'];
 
 		$articleQuery = "SELECT * FROM articles WHERE id = $idArticle";
-		$authorQuery = "SELECT * FROM users INNER JOIN articles ON users.id = articles.id_author";
-		
 		$articleResult = mysqli_query($database, $articleQuery);
-		$authorResult = mysqli_query($database, $authorQuery);
-
 		$article = mysqli_fetch_assoc($articleResult);
+		
+		$authorQuery = "SELECT * FROM users WHERE id = '".$article['id_author']."'";
+		$authorResult = mysqli_query($database, $authorQuery);
 		$author = mysqli_fetch_assoc($authorResult);
 
 		$categoryQuery = "SELECT * FROM category WHERE id = '".$article['id_category']."'";
