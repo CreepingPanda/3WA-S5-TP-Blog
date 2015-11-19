@@ -15,11 +15,11 @@ $dataUsers = mysqli_fetch_assoc($resultUsers);
 
 if (isset($_POST['login'], $_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['password'], $_POST['password2'], $_POST['avatar']))
 {
-	$login = $_POST['login'];
-	$nom = $_POST['nom'];
-	$prenom = $_POST['prenom'];
-	$email = $_POST['email'];
-	$avatar = $_POST['avatar'];
+	$login = mysqli_real_escape_string($_POST['login']);
+	$nom = mysqli_real_escape_string($_POST['nom']);
+	$prenom = mysqli_real_escape_string($_POST['prenom']);
+	$email = mysqli_real_escape_string($_POST['email']);
+	$avatar = mysqli_real_escape_string($_POST['avatar']);
 
 	if (strlen($login) < 4)
 	{
