@@ -28,7 +28,7 @@
 			$total = $total + $notes['value'];
 			$i++;
 		}
-		$moyenne = $total / $i;
+			$moyenne = $total / $i;
 
 		// ____ Update note moyenne
 		if ( $article['note'] != $moyenne ) {
