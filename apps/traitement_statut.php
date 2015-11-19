@@ -13,7 +13,7 @@ $statut="UPDATE users SET rights='".$statut."' WHERE id=".$id ;
 
 mysqli_query($database, $statut);
 
-header('Location:index.php?page=userlist ');
+header('Location:index.php?page=userlist ');û
 exit;
 
 
