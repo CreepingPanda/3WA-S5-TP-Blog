@@ -202,6 +202,31 @@ table{
 
            /*   ARTICLES*/
 
+.select-note {
+  color:#000;
+  background: #fff;
+  display: inline-block;
+}
+.select-note:hover {
+  color:#000;
+  background: #fff;
+}
+
+.select-note:active {
+  color:#000;
+  background: #fff;
+}
+
+.note-valid {
+  padding-top: 24px;
+}
+.note-select {
+  padding: 0;
+}
+.article-back {
+  padding: 0;
+}
+
           /*  COMMENTAIRE*/
 
 .com{
