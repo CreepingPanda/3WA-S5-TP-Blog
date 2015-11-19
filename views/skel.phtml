@@ -2,18 +2,22 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title><?php echo $title; ?></title>
+		<title><?php echo $titre; ?></title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-		<link rel="css" type="text/css" href="./public/css/styles.css"/>
+		<link rel="stylesheet" type="text/css" href="./public/css/style.css"/>
 	</head>
 	<body>
 		<?php require('apps/header.php'); ?>
-		<?php require('apps/content.php'); ?>
-		<?php require('apps/footer.php'); ?>
+		<div class="container">
+			<?php require('apps/content.php'); ?>
+			<?php require('apps/footer.php'); ?>
+		</div>
+		
 
 	<script type="text/javascript" src="./public/script/jquery-2.1.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="./public/script/script.js"></script>
+	<script type="text/javascript" src="./public/script/scriptHollux.js"></script>
 
 	</body>
 </html>

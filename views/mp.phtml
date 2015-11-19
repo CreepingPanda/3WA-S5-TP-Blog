@@ -1,0 +1,12 @@
+<div class="mpContent">
+	<p class="title-mp">
+			Message de <a href="?page=profil&id=<?php echo $mp['id_writer'] ?>"><?php echo $mp['login'] ?></a>:
+	</p>
+	<p class="mp">
+		<?php echo nl2br( $mp['content'] );?>
+	</p>
+	<br/>
+	<p>
+		<button type="button" class="btn btn-primary js_answer" data-mp="<?=$mp['pmid']?>">Répondre</button>
+	</p>
+</div>

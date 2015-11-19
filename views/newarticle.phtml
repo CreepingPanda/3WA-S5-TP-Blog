@@ -1,0 +1,19 @@
+<form method='post' action='?page=newarticle'>
+	<fieldset>
+		<legend>Ajouter un article :</legend>
+		<label for='title'>Titre de l'article :</label><br />
+		<input type='text' name='title' id='title' placeholder='6-127 car.' value="<?=htmlentities($title)?>" /><br><br />
+		<label for='content'>Contenu :</label><br />
+		<input type='textarea' name='content' id='content' placeholder='140-8191 car.' value="<?=htmlentities($content)?>" /><br><br />
+		<label for='category'>Catégorie :</label><br />
+		<select name='category' id='category'>
+			<option value="<?=htmlentities(1)?>">Tiramisu</option>
+			<option value="<?=htmlentities(2)?>">Pizza</option>
+			<option value="<?=htmlentities(3)?>">Lapins mutants zombies</option>
+			<option value="<?=htmlentities(4)?>">Chèvre miel</option>
+		</select><br /><br />
+		<label for='image'>Image (optionnel) :</label><br />
+		<input type='text' name='image' id='image' placeholder="Url de l'image" value='<?=htmlentities($image)?>' /><br /><br />
+		<button type='submit'>Valider</button>
+	</fieldset>
+</form>

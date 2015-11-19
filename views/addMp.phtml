@@ -1,0 +1,10 @@
+<h1 class="title-New-mp">Nouveau Mp:</h1>
+<form method="POST" action="index.php?page=addMp">
+	<label><input class="form-control" type="text" name="loginTarget" value="<?=htmlentities($loginTarget)?>" placeholder="login du membre"></label>
+	<h2 class="title-New-mp">Contenu du message :</h2>
+	<textarea class="form-control" rows="3"
+	type="text" name="content" value="<?=htmlentities($content)?>">
+	</textarea>
+	<br/>
+	<input class="btn btn-primary" type="submit" value="Valider">
+</form>

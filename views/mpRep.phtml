@@ -1,0 +1,10 @@
+<div class="mpJS mp<?=$mp['pmid']?>">
+	<form method="POST" action="index.php?page=addMp">
+		<h2 class="title-New-mp">Contenu du message :</h2>
+		<textarea class="form-control" rows="3"
+		type="text" name="content" value="<?=htmlentities($content)?>"></textarea>
+		<input type="hidden" name="loginTarget" value="<?=htmlentities($mp['login'])?>">
+		<br/>
+		<input class="btn btn-primary" type="submit" value="Valider">
+	</form>
+</div>
