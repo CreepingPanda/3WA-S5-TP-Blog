@@ -15,7 +15,7 @@ if (isset($_POST['value'], $_POST['idarticle'], $_SESSION['id']))
 		$resultat = mysqli_query($database, $query);
 		if ($resultat)
 		{
-			header("Location: ?page=article&id='.$idArticle.'"); 
+			header("Location: ?page=article&id=".$idArticle); 
 			exit;
 		}
 		else
