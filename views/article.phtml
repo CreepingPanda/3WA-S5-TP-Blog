@@ -1,10 +1,11 @@
 <?php require('apps/delete_article.php'); ?>
 <?php require('apps/article_edit_btn.php'); ?>
 
-<h2><strong><?=$article['title']?></strong> <small>par <span class="login"><a href="?page=profil&id=<?=$author['id']?>"><?=$author['login']?></a></span></small></h2>
-<h4><?php require('apps/note_display.php'); ?></h4>
-
-<h4>Catégorie : <?=$category['name']?></h4>
+<h2 class="titre-article"><strong><?=$article['title']?></strong> <small>par <span class="login"><a href="?page=profil&id=<?=$author['id']?>"><?=$author['login']?></a></span></small></h2>
+<div class="sous-titres">
+	<h4 class="titre-cat"><strong>Catégorie</strong> : <?=$category['name']?></h4>
+	<h4 class='titre-note'><?php require('apps/note_display.php'); ?></h4>
+</div>
 
 <div class="row">
 	<div class="col-md-4">
@@ -13,13 +14,17 @@
 	<div class="col-md-8">
 		<p><?=$article['content']?></p>
 		<?php require('apps/note.php') ?>
-		<div class="article-back col-md-6 col-sm-6 col-xs-6">
+		<div class="article-back col-md-7 col-sm-7 col-xs-7">
 			<a href='?page=artlist'>> Retour aux articles</a>
 		</div>
 		
 	</div>
 </div>
-
-<h3><strong class='com'>Commentaires</strong> :</h3>
-<?php require('apps/comments.php') ?>
-<?php require('apps/addComment.php'); ?>
+<div class="article-com">
+	<h3><strong class='com'>Commentaires</strong> :</h3>
+	<div class="champ-com">
+		<?php require('apps/comments.php') ?>
+	</div>
+	<?php require('apps/addComment.php'); ?>
+	
+</div>
