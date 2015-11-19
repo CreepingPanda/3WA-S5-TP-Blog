@@ -23,7 +23,7 @@
 		$notes = mysqli_fetch_assoc($notesResult);
 
 		// ____ Calcul note moyenne
-		if ( $article['note'] ) {
+		if ( $article['note']!=NULL && $notes) {
 			$total = 0;
 			$i = 0;
 			while ( $notes = mysqli_fetch_assoc($notesResult) ) {
@@ -31,9 +31,9 @@
 				$i++;
 			}
 			$moyenne = $total / $i;
-
+			
 			// ____ Update note moyenne
-			if ( $article['note'] != $moyenne ) {
+			if ( $article['note']!=$moyenne ) {
 				$updateNoteQuery = "UPDATE articles SET note = '".$moyenne."'";
 				mysqli_query($database, $updateNoteQuery);
 			}
