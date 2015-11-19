@@ -177,12 +177,14 @@ table{
 
 /* ---------------    MESSAGE PRIVE  -------------   */
 .mp{
-  border-radius: 10px;
+  
   background: #fff;
   padding: 5px;
 }
 .title-mp{
   font-size: 20px;
+  
+
 }
 .title-New-mp{
   color: #000;
