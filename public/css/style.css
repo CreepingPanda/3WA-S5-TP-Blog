@@ -254,19 +254,23 @@ padding: 10px;
   padding: 0;
 }
 
+/*-------------------NEW ARTICLE--------------------*/
+
+.new-article {
+  margin: 0 auto;
+  padding: 0;
+}
+
           /*  COMMENTAIRE*/
 
 .com{
 
 }
-<<<<<<< HEAD
+
 .auteurCom{
   color:#337AB7;
-=======
-.autheurCom{
-
->>>>>>> 044ee52fddb2b3abc96b56604808e14c13b86ccd
 }
+
 .contentCom{
   font-size: 1.3em;
   background-color: white;
