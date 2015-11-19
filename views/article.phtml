@@ -4,12 +4,18 @@
 <h2><strong><?=$article['title']?></strong> par <em><?=$author['login']?></em></h2>
 <h4>Catégorie : <?=$category['name']?></h4>
 
-<figure><img src='<?=$article['image']?>' alt='Figure' width='20%' /></figure>
+<div class="row">
+	<div class="col-md-4">
+		<figure><img src='<?=$article['image']?>' alt='Figure' width='100%' /></figure>
+	</div>
+	<div class="col-md-8">
+		<p><?=$article['content']?></p>
+		<?php require('apps/note.php') ?>
+		<p><a href='?page=artlist'>> Retour aux articles</a></p>
+	</div>
+</div>
 
-<p><?=$article['content']?></p>
-<?php require('apps/note.php') ?>
-<p><a href='?page=artlist'>> Retour aux articles</a></p>
 
-<h3>Commentaires :</h3>
+<h3><strong class='com'>Commentaires</strong> :</h3>
 <?php require('apps/comments.php') ?>
 <?php require('apps/addComment.php'); ?>

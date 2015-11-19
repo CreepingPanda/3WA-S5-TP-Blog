@@ -1,4 +1,4 @@
-
+              /*    BORDEL*/
 .container {
   padding:0 5px;
 }
@@ -6,7 +6,13 @@
 body {
   background-color: #D2D2D2; }
 
+img{
+  max-width: 100%;
+  max-width: 1500px;
+  max-height: 1500px;
+}
 
+            /*  NAVBAR*/
 .navbar {
   border-radius: 0;
 }
@@ -192,3 +198,15 @@ table{
   color: #fff;
 }
 
+           /*   ARTICLES*/
+
+          /*  COMMENTAIRE*/
+
+.com{
+  text-decoration: underline;
+}
+.autheurCom{
+}
+.contentCom{
+  font-size: 1.3em;
+}

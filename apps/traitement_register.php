@@ -53,10 +53,11 @@ if (isset($_POST['login'], $_POST['password'], $_POST['password2'], $_POST['emai
 		$mois = date('M');
 		$annee = date('Y');
 		$date_register = $jour.' '.$mois.' '.$annee;
+		$_SESSION['login'] = $login;
 		$query = "INSERT INTO users (date_register, login, nom, prenom, email, password, avatar) VALUES('$date_register', '$login', '$nom', '$prenom', '$email', '$hash', '$avatar')";
 		$resultat = mysqli_query($database, $query);
-
-		header('Location: index.php?page=login');
+var_dump($_SESSION['login']);
+		header('Location: index.php?page=postRegister');
 		exit;
 	}
 
