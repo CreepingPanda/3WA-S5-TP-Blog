@@ -1,4 +1,10 @@
 <h3><a href='?page=article&id=<?=$lastArticle['id']?>'><?=$lastArticle['title']?></a></h3>
 <p>Par <a href='?page=profil&id=<?=$author['id']?>'><?=$author['login']?></a>, <?=$lastArticle['date_post']?> - Catégorie : <?=$category['name']?></p>
-<figure><img src='<?=$lastArticle['image']?>' alt='Figure' width='30%' /></figure>
-<p><em><?=substr($lastArticle['content'], 0, 120)?>...</em> - <a href='?page=article&id=<?=$lastArticle['id']?>'>Read more</a></p>
+<div class="row">
+	<div class="col-md-4">
+		<figure><img src='<?=$lastArticle['image']?>' alt='Figure' width='100%' /></figure>
+	</div>
+	<div class="col-md-8">
+		<p><em><?=substr($lastArticle['content'], 0, 120)?>...</em> - <a href='?page=article&id=<?=$lastArticle['id']?>'>Read more</a></p>
+	</div>
+</div>
