@@ -23,5 +23,8 @@ if (isset($_POST['value'], $_POST['idarticle'], $_SESSION['id']))
 			$errors[] = mysqli_error($db);
 		}
 	}
+}else {
+	header('Location: ?page=home');
+	exit;
 }
 ?>
