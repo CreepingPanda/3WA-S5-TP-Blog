@@ -1,1 +1,11 @@
-<p>Le glorieux <a href='?page=profil&id=<?=$lastMember['id']?>'><?=$lastMember['login']?></a> s'est inscrit le <?=$lastMember['date_register']?> ! Crevez-lui les pneus !</p>
+<div class="home col-md-2 col-sm-2 col-xs-6">
+<div class="post-member"><a href='?page=profil&id=<?=$lastMember['id']?>'>
+	<figure class="home-img"><img src='<?=$lastMember['avatar']?>' alt='Figure' width='100%' />
+		<div class="overlay">
+			<div class="overlay-title"><h3><?=$lastMember['login']?></h3>
+				<div class="separateur-membre"></div>	
+				<p class="member-date">s'est inscrit le <span><?=$lastMember['date_register']?></span></p></div>
+		</div>
+	</figure>
+</a></div>
+</div>

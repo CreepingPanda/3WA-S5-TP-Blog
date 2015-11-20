@@ -47,6 +47,12 @@ h1, h2, h3{
   background: #337AB7;
   margin: 15px auto 25px auto;
 }
+.separateur-membre {
+  height:1px;
+  width:30px;
+  background: #D2D2D2;
+  margin: 15px auto ;
+}
 .home-category {
   text-transform: uppercase;
   margin:10px 0 0 0;
@@ -56,16 +62,26 @@ h1, h2, h3{
 }
 .home-date {
   text-align: center;
-  color:#929292;
+  color:#737373;
+}
+.fa-calendar, .fa-bookmark {
+  color:#444444;
+  padding-right: 5px;
+  font-size: 10px;
+}
 }
 .post {
  height:300px;
   overflow: hidden;
 } 
+.post-member {
+  height:170px;
+}
 .home-img {
   position: relative;
   width:100%;
   height:100%;
+  overflow: hidden;
 }
 .overlay {
   background: rgba(0,0,0,.5);
@@ -76,8 +92,9 @@ h1, h2, h3{
     height: 100%;
     color: #fff;
     opacity: 0;
-    transition: all .2s ease-in-out .2s;
+    transition: all .3s ease-in-out .3s;
     z-index: 1;
+    overflow: hidden;
 }
 .overlay-title {
     padding: 0 30px;
@@ -101,6 +118,22 @@ h1, h2, h3{
     top:50%;
     margin-top: -25px;
 }
+
+.last-member {
+  padding-bottom: 30px;
+}
+.last-member h3{
+  font-size: 15px;
+  margin-top: 0;
+}
+.member-date {
+  font-weight: lighter;
+  font-size: 11px;
+}
+.member-date span {
+  font-weight: bold;
+}
+
 
 
             /*  NAVBAR*/
