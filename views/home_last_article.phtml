@@ -9,10 +9,10 @@
 			</div>
 		</figure>
 	</a></div>
-		<p class="home-category">Catégorie : <?=$category['name']?></p>
+		<p class="home-category"><i class="fa fa-bookmark"></i> Catégorie : <?=$category['name']?></p>
 		<h3><a href='?page=article&id=<?=$lastArticle['id']?>'><?=$lastArticle['title']?></a></h3>
 	<div class="separateur"></div>	
-	<em><p class="home-date"><?=$lastArticle['date_post']?> - Par <a href='?page=profil&id=<?=$author['id']?>'><?=$author['login']?></a></p></em>
+	<em><p class="home-date"><i class="fa fa-calendar"></i> <?=$lastArticle['date_post']?> - Par <a href='?page=profil&id=<?=$author['id']?>'><?=$author['login']?></a></p></em>
 
 	<div class"home-content">
 		<p><em><?=substr($lastArticle['content'], 0, 120)?>...</em> - <a href='?page=article&id=<?=$lastArticle['id']?>'>Read more</a></p>
