@@ -1,10 +1,16 @@
-<h3><a href='?page=article&id=<?=$lastArticle['id']?>'><?=$lastArticle['title']?></a></h3>
-<p>Par <a href='?page=profil&id=<?=$author['id']?>'><?=$author['login']?></a>, <?=$lastArticle['date_post']?> - Catégorie : <?=$category['name']?></p>
-<div class="row">
-	<div class="col-md-4">
-		<figure><img src='<?=$lastArticle['image']?>' alt='Figure' width='100%' /></figure>
+<div class="home col-md-6 col-sm-6 col-xs-12">
+
+	<div>
+		<figure class="home-img"><img src='<?=$lastArticle['image']?>' alt='Figure' width='100%' /></figure>
 	</div>
-	<div class="col-md-8">
+		<p class="home-category">Catégorie : <?=$category['name']?></p>
+		<h3><a href='?page=article&id=<?=$lastArticle['id']?>'><?=$lastArticle['title']?></a></h3>
+	<div class="separateur"></div>	
+	<em><p class="home-date"><?=$lastArticle['date_post']?> - Par <a href='?page=profil&id=<?=$author['id']?>'><?=$author['login']?></a></p></em>
+
+	<div class"home-content">
 		<p><em><?=substr($lastArticle['content'], 0, 120)?>...</em> - <a href='?page=article&id=<?=$lastArticle['id']?>'>Read more</a></p>
-	</div>
+
+
+</div>
 </div>

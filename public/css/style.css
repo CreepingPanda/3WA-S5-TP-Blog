@@ -16,6 +16,53 @@ h1, h2, h3{
   font-family: 'Bitter', serif; 
 }
 
+/*------------HOME-------------*/
+.home-title {
+  text-align: center;
+}
+.home h3{
+  margin:10px 0 0 0;
+  text-align: center;
+}
+.home h3 a {
+  color : #222222;
+}
+.home h3 a:hover {
+  text-decoration: none;
+  color:#337AB7;
+}
+.home-img {
+  height:300px;
+  overflow: hidden;
+}
+.home-img img {
+
+}
+.separateur {
+  height:1px;
+  width:30px;
+  background: #337AB7;
+  margin: 15px auto ;
+}
+.separateur-title {
+  height:1px;
+  width:100px;
+  background: #337AB7;
+  margin: 15px auto 25px auto;
+}
+.home-category {
+  text-transform: uppercase;
+  margin:10px 0 0 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color:#337AB7;
+}
+.home-date {
+  text-align: center;
+  color:#929292;
+}
+
+
             /*  NAVBAR*/
 .navbar {
   border-radius: 0;
