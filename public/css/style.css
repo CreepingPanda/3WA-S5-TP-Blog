@@ -31,10 +31,7 @@ h1, h2, h3{
   text-decoration: none;
   color:#337AB7;
 }
-.home-img {
-  height:300px;
-  overflow: hidden;
-}
+
 .home-img img {
 
 }
@@ -60,6 +57,49 @@ h1, h2, h3{
 .home-date {
   text-align: center;
   color:#929292;
+}
+.post {
+ height:300px;
+  overflow: hidden;
+} 
+.home-img {
+  position: relative;
+  width:100%;
+  height:100%;
+}
+.overlay {
+  background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    opacity: 0;
+    transition: all .2s ease-in-out .2s;
+    z-index: 1;
+}
+.overlay-title {
+    padding: 0 30px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -50%;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase; 
+  transition: all .3s ease-in-out .3s;
+  z-index: 2;
+}
+.overlay-title h3 {
+   font-size: 2rem;
+}
+.home-img:hover .overlay {
+    opacity: 1;
+}
+.home-img:hover .overlay-title {
+    top:50%;
+    margin-top: -25px;
 }
 
 

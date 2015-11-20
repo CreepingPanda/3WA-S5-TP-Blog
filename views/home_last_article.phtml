@@ -1,8 +1,14 @@
 <div class="home col-md-6 col-sm-6 col-xs-12">
-
-	<div>
-		<figure class="home-img"><img src='<?=$lastArticle['image']?>' alt='Figure' width='100%' /></figure>
-	</div>
+	
+			
+		
+	<div class="post"><a href='?page=article&id=<?=$lastArticle['id']?>'>
+		<figure class="home-img"><img src='<?=$lastArticle['image']?>' alt='Figure' width='100%' />
+			<div class="overlay">
+				<div class="overlay-title"><h3><?=$lastArticle['title']?></h3></div>
+			</div>
+		</figure>
+	</a></div>
 		<p class="home-category">Catégorie : <?=$category['name']?></p>
 		<h3><a href='?page=article&id=<?=$lastArticle['id']?>'><?=$lastArticle['title']?></a></h3>
 	<div class="separateur"></div>	
